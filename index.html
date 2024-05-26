@@ -9,8 +9,9 @@
 <body>
     <header>
         <div class="container">
-            <h1>Jenerth Rodriguez</h1>
+            <h1>Jenerth Rodriguez Millon</h1>
             <nav>
+                <button id="toggleNightMode" onclick="toggleNightMode()">Night Mode</button>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -19,44 +20,136 @@
             </nav>
         </div>
     </header>
-
+    
     <section id="about">
-        <div class="container">
-            <h2><p style="color: green;">About me</p></h2>
-            <p>My name is Jenerth Rodriguez, I'm a senior student at University of Louisville I'm currently
-
-            </p>
-                <p>
-            pursuing a bachelor degree in Computer Science and Engineering I have expirience in Java, C/C++
-                </p>
+        <div class="container about-container">
+            <div class="about-content">
+                <h2><p style="color: green;">About me</p></h2>
+                <p>My name is Jenerth Rodriguez, I'm a senior student at the University of Louisville. I'm currently pursuing a bachelor's degree in Computer Science and Engineering. I have experience in Java, C/C++, Python.<br>
+                    I have experience using hardware such as Arduino Metro Uno, ATmega 328PB Xplained Mini, and Raspberry Pi. I'm pursuing a position as a Backend Software Engineer and also a position in mobile <br>
+                    application development in Swift, Android, or React Native. I'm an enthusiast in Cybersecurity, I'm in constant learning in this interesting field.<br>
+                    I'm a Software Developer Tutor at Code Louisville,
+                    </p>   
+            </div>
+            <div class="profile-picture">
+                <img src="/pictures/profile.jpg" alt="profile">
+            </div>
         </div>
     </section>
-
+    
     <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <div class="portfolio-items">
                 <!-- Add your portfolio items here -->
                 <div class="portfolio-item">
-                    <img src="portfolio-item-1.jpg" alt="Portfolio Item 1">
-                    <h3>Project Name</h3>
-                    <p>Description of the project goes here.</p>
+                    <h3>Maze Game in the terminal</h3>
+                    <img src="/pictures/mazeGame.jpg" alt="Maze Game in the terminal" class="portfolio-img">
+                    <p>In this project, I created a videogame in C and C++ to play in the terminal. The user has to complete the Maze to win the game. The user can move the character with the arrow keys and use the space bar to shoot enemies. The user can also choose to not continue to finish the game or press start to play again. The game will randomize the maze each time to ensure a unique experience.</p>
+                    <a href="https://github.com/Jenerth22Rodriguez/project-2-" target="_blank">Click to learn more</a>
                 </div>
+                
                 <div class="portfolio-item">
-                    <img src="portfolio-item-2.jpg" alt="Portfolio Item 2">
-                    <h3>Project Name</h3>
-                    <p>Description of the project goes here.</p>
+                    <h3>Water Temperature Check</h3>
+                    <img src="/pictures/ECE420.jpg" alt="Water Temperature Check" class="portfolio-img">
+                    <p>In this project, we used the ATmega 328PB Xplained Mini to check the water temperature using a Thermistor NTC 10K Ohm and an ultrasonic sensor. The system avoids overflow when the water reaches the desired distance by using green and red LEDs to trigger a buzzer sound when the water reaches the distance.</p>
+                    <a href="https://github.com/Jenerth22Rodriguez/FinalProject" target="_blank">Click to learn more</a>
                 </div>
-                <!-- Add more portfolio items as needed -->
+                
+                <div class="portfolio-item">
+                    <h3>Data loader to load sensor data for visualization and exploration</h3>
+                    <img src="/pictures/CSE350.png" alt="Multimodal sensor signal data" class="portfolio-img">
+                    <p>Design and develop an interactive user interface to use visualization techniques and visual analysis to explore multimodal sensor signal data and to tell how and what you can discover interesting information and pattern from the visualization.</p>
+                    <a href="https://github.com/Jenerth22Rodriguez/CSE_350_Project" target="_blank">Click to learn more</a>
+                </div>
+                
+                <div class="portfolio-item">
+                    <h3>Rental Car system</h3>
+                    <img src="/pictures/Screenshot-SimpleCarRental.png" alt="Rental Car system" class="portfolio-img">
+                    <p>The project entails the development of a comprehensive rental car system program. Users have the capability to navigate through our database seamlessly, allowing them to explore and check the availability of various cars. The system is designed to provide a user-friendly interface in the terminal, making it easy for customers to access relevant information such as car details, rental rates, and current availability.</p>
+                    <a href="https://github.com/Jenerth22Rodriguez/CSE-130-Project" target="_blank">Click to learn more</a>
+                </div>
+                
+                <div class="portfolio-item">
+                    <h3>Weather Forecast App</h3>
+                    <img src="/pictures/weatherApp.png" alt="Weather Forecast App" class="portfolio-img">
+                    <p>The Weather Forecast App is a mobile application developed using React Native. It provides users with real-time weather information, including current conditions, hourly forecasts, and extended forecasts. Users can search for weather forecasts by location and save their favorite locations for quick access.
+                        Note: This app still in progress
+                        <a href="https://github.com/Jenerth22Rodriguez/ReactNativeapp" target="_blank">Click to learn more</a>
+                    </p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h3>Homemade WebServer</h3>
+                    <img src="/pictures/ServerImage.jpg" alt="Project X" class="portfolio-img">
+                    <p>In this personal project. I turn my Raspberry Pi 3 B+ into a web server to host my project on the web
+                        by using the SSH, I'm allow to get access to my server on any Computer. 
+                    </p>
+                </div>
+                
+                <div class="portfolio-item">
+                    <h3>TDD and Testing in C++</h3>
+                    <img src="/pictures/C++Testting.PNG" alt="Project X" class="portfolio-img">
+                    <p>In this personal project. I was learning how to use the TDD method in C++, also I was running unit test using 
+                        gmock in my C++ project. Note: This project still in progress. 
+                    </p>
+                </div>
+            </div
+
+    section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <ul>
+                    <li>Java</li>
+                    <li>C/C++</li>
+                    <li>Swift</li>
+                    <li>Android Development</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li>React Native</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>Azure</li>
+                    <li>Django</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li>PHP</li>
+                    <li>SpringBoot</li>
+                    <li>MySQL</li>
+                    <li>Agile</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="work-experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="work-experience">
+                <ul>
+                    <li><strong>Embedded Software Engineer - GE Appliance Park (August 2022 - to December 2022)</strong></li>
+                    <p> I was Debugging and writing code in C/ C++ during my rotation for the newest appliances. <br>
+                        I was part of the laundry team where I wrote the Initialization process of the “Eco Mode” in the upcoming laundries models.	I was part of the sumo robot competition. I was in charge of writing the code  where our bot has to initialize after 5 seconds and write the code if the sumo has other bots in front the sumo bot speeds up. 
+                        </p>
+                    <li><strong>Web Developer Tutor - Code Louisville (Part-time, January 2024-present)</strong></li>
+                    <p> As a Software Developer Tutor, I have the privilege of guiding and mentoring individuals on their journey to becoming proficient developers. Through personalized instruction and hands-on support, I empower learners to navigate the intricate landscape of software development with confidence and skill.<br>
+                        Whether it's helping students unravel the mysteries of algorithms, debug code, or architect scalable applications, my role is to demystify complex concepts and inspire a love for coding.</p>
+                    <li><strong>Software Engineer  - AqLab Resource (Intern, Summer 2024)</strong></li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <div class="profile-picture">
-                <img src="profile-picture.jpg" alt="Profile Picture">
-            </div>
             <div class="contact-content">
                 <h2>Contact Me</h2>
                 <p>You can reach me on the following platforms:</p>
@@ -64,17 +157,18 @@
                     <li><a href="https://www.linkedin.com/in/jenerth-rodriguez-69a2b1172/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/Jenerth22Rodriguez" target="_blank">GitHub</a></li>
                     <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
+                    <li><a href="mailto:Connerjamestill@gmail.com">Connerjamestill@gmail.com</a>.</p>
                 </ul>
-                <p>Or you can fill out the form below to send me a message:</p>
-                <form action="send-email.php" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+
+                <h2>Hobbies</h2>
+                <div class="row">
+                    <ul>
+                        <li>Hiking</li>
+                        <li>Traveling/Photographer</li>
+                        <li>Outdoor activities</li>
+                        <li>Listen music</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -84,5 +178,11 @@
             <p>&copy; 2024 Jenerth Rodriguez. All rights reserved.</p>
         </div>
     </footer>
+        <script>
+            function toggleNightMode() {
+                var body = document.body;
+                body.classList.toggle("night-mode");
+            }
+        </script>
 </body>
 </html>
